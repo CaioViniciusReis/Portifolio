@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Orbitron', sans-serif;
+  background-color: #0a0a0a;
+  color: #00ffcc;
+  line-height: 1.6;
+  padding-bottom: 80px;
+  background-image: radial-gradient(circle at top left, #141414, #000000);
+}
+
+/* Cabeçalho */
+header {
+  background: linear-gradient(90deg, #ffff00, #00ff00, #0099ff);
+  color: black;
+  text-align: center;
+  padding: 1.5em;
+  text-shadow: 0 0 10px #ffff00;
+  box-shadow: 0 0 20px #00ffcc;
+}
+
+header h1 {
+  font-size: 2.5rem;
+}
+
+/* Navegação */
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1em;
+  margin-top: 1em;
+}
+
+nav ul li a {
+  color: #00ffcc;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 0.5em 1em;
+  border: 2px solid #00ffcc;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+nav ul li a:hover {
+  background-color: #00ffcc;
+  color: black;
+  box-shadow: 0 0 10px #00ffcc;
+}
+
+/* Conteúdo principal */
+main {
+  padding: 2em;
+}
+
+main h2 {
+  color: #ffff00;
+  margin-bottom: 1em;
+  text-shadow: 0 0 8px #ffff00;
+}
+
+main p, main li {
+  font-size: 1.1rem;
+  margin-bottom: 1em;
+  color: #e0ffe0;
+}
+
+/* Rodapé */
+footer {
+  background: linear-gradient(to right, #0099ff, #00ff00, #ffff00);
+  color: black;
+  text-align: center;
+  padding: 1em;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  font-weight: bold;
+  text-shadow: 0 0 5px #ffffff;
+}
+
+/* Formulário de Contato */
+form {
+  background-color: #1a1a1a;
+  padding: 2em;
+  border-radius: 10px;
+  box-shadow: 0 0 15px #0099ff;
+  max-width: 600px;
+  margin: auto;
+}
+
+form label {
+  display: block;
+  margin-bottom: 0.5em;
+  font-weight: bold;
+  color: #00ff00;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 0.75em;
+  margin-bottom: 1em;
+  border: none;
+  border-radius: 5px;
+  background-color: #0d0d0d;
+  color: #00ffcc;
+  box-shadow: inset 0 0 5px #0099ff;
+}
+
+form input[type="submit"] {
+  background-color: #ffff00;
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+form input[type="submit"]:hover {
+  background-color: #00ff00;
+  color: black;
+  box-shadow: 0 0 10px #00ff00;
+}
